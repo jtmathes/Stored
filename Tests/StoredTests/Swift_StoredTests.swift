@@ -1,5 +1,5 @@
 import XCTest
-@testable import Swift_Stored
+@testable import Stored
 
 final class Swift_StoredTests: XCTestCase {
     func testExample() throws {

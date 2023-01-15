@@ -1,5 +1,5 @@
-# Swift-Stored
 A simple interface for UserDefaults that allows for observing and reacting to changes to the value. Compatible with SwiftUI.
+
 
 ### Import
 ```swift
@@ -91,3 +91,7 @@ final class LocalStorage: ObservableObject {
   ```
   
 </details>
+
+## Attribution
+// https://www.vadimbulavin.com/advanced-guide-to-userdefaults-in-swift/
+// https://www.swiftbysundell.com/articles/property-wrappers-in-swift/
