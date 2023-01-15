@@ -108,6 +108,6 @@ final class LocalStorage: ObservableObject {
   
 </details>
 
-## Attribution
-// https://www.vadimbulavin.com/advanced-guide-to-userdefaults-in-swift/
-// https://www.swiftbysundell.com/articles/property-wrappers-in-swift/
+## Attributions
+- https://www.vadimbulavin.com/advanced-guide-to-userdefaults-in-swift/
+- https://www.swiftbysundell.com/articles/property-wrappers-in-swift/
