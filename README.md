@@ -1,5 +1,21 @@
-A simple interface for UserDefaults that allows for observing and reacting to changes to the value.  
+# Stored for Swift
+
+*or, "UserDefaults Made Easy"*
+
+> A simple interface for UserDefaults that allows for observing and reacting to changes to the value.  
 Compatible with SwiftUI.
+
+### The Problem
+- Writing the UserDefaults key string once, and only once, is valuable.
+  - Enums felt like a hack.
+- Out-of-sync toggles if the logic was done outside of SwiftUI
+- Access across the app.
+  - @AppStorage worked well only within the confines of the SwiftUI sphere.
+
+### The Solution
+- Supports Binding to SwiftUI elements.
+- Supports onChange() execution.
+- Works like it should ^TM.
 
 ## Import
 ```swift
