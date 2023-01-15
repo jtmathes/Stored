@@ -1,5 +1,5 @@
 //
-//  StoredProperty.swift
+//  StoredPropertyWrapper.swift
 //
 //  Created by Joshua Mathes on 1/14/23.
 //
@@ -113,3 +113,4 @@ private protocol AnyOptional {
 extension Optional: AnyOptional {
   var isNil: Bool { self == nil }
 }
+
