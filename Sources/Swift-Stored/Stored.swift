@@ -12,7 +12,7 @@
 import Foundation
 import SwiftUI
 
-
+@available(iOS 13.0, *)
 @available(macOS 10.15, *)
 @propertyWrapper
 class Stored<AnyType>: NSObject {
@@ -88,6 +88,7 @@ class Stored<AnyType>: NSObject {
 
 // MARK: Enables optional values.
 
+@available(iOS 13.0, *)
 @available(macOS 10.15, *)
 extension Stored where AnyType: ExpressibleByNilLiteral {
   convenience init(
