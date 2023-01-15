@@ -1,7 +1,7 @@
-A simple interface for UserDefaults that allows for observing and reacting to changes to the value. Compatible with SwiftUI.
+A simple interface for UserDefaults that allows for observing and reacting to changes to the value.  
+Compatible with SwiftUI.
 
-
-### Import
+## Import
 ```swift
 import Stored
 ```
