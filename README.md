@@ -1,7 +1,6 @@
 # Swift-Stored
 A simple interface for UserDefaults that allows for observing and reacting to changes to the value. Compatible with SwiftUI.
 
-### Implementation
 
 **Example 1.** Most simple usage, storing in UserDefaults.standard by default.
 
@@ -12,7 +11,8 @@ final class LocalStorage: ObservableObject {
   @Stored("hapticFeedbackEnabled") static var hapticsEnabled: Bool = false
 
 }
-
+```
+```
 // Utilization
 // The "static var" allows us to use this as a singleton value.
 LocalStorage.hapticsEnabled = true
@@ -40,14 +40,16 @@ final class LocalStorage: ObservableObject {
   }) static var sync: Bool = false
   
 }
-
+```
+```
 // Utilization in a practical use case.
 struct SettingsView: View {
   var body: some View {
     Toggle(isOn: LocalStorage.$sync) { Text("Synchronize Data") }
   }
 }
-
+```
+```
 // Alternate utilization. The onChange() function will fire when this runs.
 UserDefaults(syncServicePrefs)?.set(true, forKey: "syncEnable")
 ```
