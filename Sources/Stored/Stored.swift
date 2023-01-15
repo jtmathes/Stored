@@ -15,7 +15,7 @@ import SwiftUI
 @available(iOS 13.0, *)
 @available(macOS 10.15, *)
 @propertyWrapper
-class Stored<AnyType>: NSObject {
+class Stored<AnyType>: NSObject, ObservableObject {
 
   init(
     wrappedValue defaultValue: AnyType,
