@@ -65,6 +65,9 @@ final class LocalStorage: ObservableObject {
 ```swift
 // Utilization in a practical use case.
 struct SettingsView: View {
+
+  @AppStorage(syncService.$sync) var sync: Bool = false
+
   var body: some View {
     Toggle(isOn: LocalStorage.$sync) { Text("Synchronize Data") }
   }
